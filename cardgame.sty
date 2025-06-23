@@ -1,0 +1,39 @@
+\ProvidesPackage{cardgame}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{calc}
+
+\newlength{\cardwidth}
+\newlength{\cardheight}
+\setlength{\cardwidth}{6cm}
+\setlength{\cardheight}{9cm}
+
+\newcommand{\card}[1]{%
+  \begin{tikzpicture}
+    \draw[rounded corners=0.3cm, fill=white, draw=black, line width=0.5pt]
+      (0,0) rectangle (\cardwidth,\cardheight);
+    #1
+  \end{tikzpicture}%
+}
+
+\newcommand{\cardtitle}[2][black]{%
+  \node[text=#1, font=\Large\bfseries, align=center, 
+        text width=\cardwidth-0.4cm] at (\cardwidth/2,\cardheight-1cm) {#2};
+}
+
+\newcommand{\cardcornernw}[1]{%
+  \node[font=\Large\bfseries] at (0.5cm,\cardheight-0.5cm) {#1};
+}
+
+\newcommand{\cardcornerne}[1]{%
+  \node[font=\Large\bfseries] at (\cardwidth-0.5cm,\cardheight-0.5cm) {#1};
+}
+
+\newcommand{\cardcornersw}[1]{%
+  \node[font=\Large\bfseries] at (0.5cm,0.5cm) {#1};
+}
+
+\newcommand{\cardcornerse}[1]{%
+  \node[font=\Large\bfseries] at (\cardwidth-0.5cm,0.5cm) {#1};
+}

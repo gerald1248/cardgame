@@ -37,3 +37,7 @@
 \newcommand{\cardcornerse}[1]{%
   \node[font=\Large\bfseries] at (\cardwidth-0.5cm,0.5cm) {#1};
 }
+
+\newcommand{\cardcenter}[1]{%
+  \node[font=\bfseries, align=center, text width=\cardwidth] at (\cardwidth/2,\cardheight/2) {#1};
+}

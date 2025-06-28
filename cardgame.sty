@@ -39,5 +39,16 @@
 }
 
 \newcommand{\cardcenter}[1]{%
-  \node[font=\bfseries, align=center, text width=\cardwidth] at (\cardwidth/2,\cardheight/2) {#1};
+  \node[font=\Huge\bfseries, align=center, text width=\cardwidth] at (\cardwidth/2,\cardheight/2) {#1};
 }
+
+\newcommand{\cardinstruction}[2][black]{%
+  \node[text=#1, font=\bfseries, align=center, 
+        text width=\cardwidth-0.4cm] at (\cardwidth/2,2cm) {#2};
+}
+
+\newcommand{\cardrequirement}[2][black]{%
+  \node[text=#1, font=\bfseries, align=center,
+	text width=\cardwidth-0.4cm] at (\cardwidth/2,\cardheight-2cm) {#2};
+}
+

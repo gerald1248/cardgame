@@ -2,10 +2,14 @@
 \usepackage{cardgame}
 \usepackage{graphicx}
 \usepackage{geometry}
-\geometry{a4paper, margin=1cm}
+\usepackage{multicol}
+\geometry{a4paper, margin=0.5cm}
+
+\newcommand{\cardspacing}{\vspace{0.20cm}}
 
 \begin{document}
 
+\begin{multicols}{3}
 \card{
   \cardtitle{Tuck Jump}
   \cardcornernw{0.0}
@@ -15,7 +19,9 @@
   \cardcenter{0 - 0 o}
   \cardinstruction{Increase execution by 0.4 for tucked skills}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Pike Jump}
   \cardcornernw{0.0}
@@ -26,7 +32,7 @@
   \cardinstruction{Increase execution by 0.4 for piked skills}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Back Somersault Tuck}
@@ -37,7 +43,9 @@
   \cardcenter{4 - 0 o}
   \cardinstruction{}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Back Somersault Pike}
   \cardcornernw{0.6}
@@ -48,7 +56,7 @@
   \cardinstruction{}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Back Somersault Straight}
@@ -59,7 +67,9 @@
   \cardcenter{4 - 0 /}
   \cardinstruction{Increases time of flight by 0.5}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Barani Tuck}
   \cardcornernw{0.6}
@@ -70,7 +80,7 @@
   \cardinstruction{}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Barani Pike}
@@ -81,7 +91,9 @@
   \cardcenter{4 - 1 o}
   \cardinstruction{}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Barani Straight}
   \cardcornernw{0.6}
@@ -92,7 +104,7 @@
   \cardinstruction{Increases time of flight by 0.5}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Full Back}
@@ -103,7 +115,9 @@
   \cardcenter{4 - 2 /}
   \cardinstruction{Increases execution by 0.4 for every skill with a full or half twist}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Rudi}
   \cardcornernw{0.8}
@@ -114,7 +128,7 @@
   \cardinstruction{Increases execution by 0.5 for every skill with a 1.5 or double twist}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Double Full Straight}
@@ -125,7 +139,9 @@
   \cardcenter{4 - 4 /}
   \cardinstruction{Increases execution by 1.0 for every double skill ending with a 1.5 or double twist}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Double Back Tuck}
   \cardcornernw{1.1}
@@ -136,7 +152,7 @@
   \cardinstruction{}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Half Out Tuck}
@@ -148,7 +164,9 @@
   \cardcenter{8 - 0 o}
   \cardinstruction{Increases execution by 0.5 for every double ending with a half twist}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Double Back Pike}
   \cardcornernw{1.3}
@@ -158,7 +176,7 @@
   \cardcenter{8 - 00 $<$}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Half Out Pike}
@@ -168,7 +186,9 @@
   \cardcornerse{1.3}
   \cardcenter{8 - 01 $<$}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Double Back Straight}
   \cardcornernw{1.0}
@@ -179,7 +199,7 @@
   \cardinstruction{Increases execution by 1.0}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Double Back Pike}
@@ -189,7 +209,9 @@
   \cardcornerse{1.0}
   \cardcenter{8 - 00 /}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Back In Full Tuck}
   \cardcornernw{1.3}
@@ -199,7 +221,7 @@
   \cardcenter{8 - 02 o}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Rudi Out Tuck}
@@ -209,7 +231,9 @@
   \cardcornerse{1.3}
   \cardcenter{8 - 03 o}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Full In Half Out Tuck}
   \cardrequirement{Required for Full In Rudy Out Tuck}
@@ -220,7 +244,7 @@
   \cardcenter{8 - 21 o}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Full Full Tuck}
@@ -231,7 +255,9 @@
   \cardcornerse{1.5}
   \cardcenter{8 - 22 o}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Full In Rudi Out Tuck}
   \cardrequirement{Requires Full In Half Out Tuck}
@@ -242,7 +268,7 @@
   \cardcenter{8 - 23 o}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Miller Tuck}
@@ -253,7 +279,9 @@
   \cardcornerse{1.9}
   \cardcenter{8 - 24 o}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Triff Tuck}
   \cardcornernw{1.7}
@@ -262,9 +290,9 @@
   \cardcornerse{1.7}
   \cardcenter{12 - 01 o}
 }
+\end{multicols}
 
-\vspace{1cm}
-
+\begin{multicols}{3}
 \card{
   \cardtitle{Triple Back Tuck}
   \cardcornernw{1.8}
@@ -273,7 +301,9 @@
   \cardcornerse{1.8}
   \cardcenter{12 - 00 o}
 }
-\hfill
+
+\cardspacing
+
 \card{
   \cardtitle{Tuck shape}
   \cardcornernw{0.4}
@@ -283,7 +313,7 @@
   \cardinstruction{Increases execution by 0.4}
 }
 
-\vspace{1cm}
+\cardspacing
 
 \card{
   \cardtitle{Pike shape}
@@ -293,5 +323,6 @@
   \cardcornerse{0.4}
   \cardinstruction{Increases execution by 0.4}
 }
+\end{multicols}
 
 \end{document}
